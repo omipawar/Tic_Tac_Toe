@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="tic_tac_toe.css">
+    <style>
+        body{
+            background : linear-gradient(120deg, rgb(163, 152, 152),rgb(27, 27, 158));
+            height: 100vh;
+
+        }
+        #head{
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container display-1 shadow" id="head">
+            <h1 class="display-4">Welcome to Tic Tac Toe</h1>
+            <!-- <button id="nice" class="btn btn-primary " onclick="game(this)">Start the game</button> -->
+            <button class="btn btn-success" onclick="start()">Start the game</button>
+            <button class="btn btn-primary" onclick="reset()">Restart the game</button>
+            <button class="btn btn-danger" onclick="stop()">Stop the game</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3><b>Steps :-</b></h3>
+                    <ul>
+                        <li>Welcome to tic tac toe</li>
+                        <li>You can Start to play directly</li>
+                        <li>X-First Player and O-Second Player</li>
+                        <li>To start the game click on start button</li>
+                        <li>To restart the game click on restart button</li>
+                        <li>To pause the game click on stop button</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 ">
+                    <table>
+                        <tr>
+                            <td onclick="run(this)" id="td1"></td>
+                            <td onclick="run(this)" id="td2"></td>
+                            <td onclick="run(this)" id="td3"></td>
+                        </tr>
+                        <tr>
+                            <td onclick="run(this)" id="td4"></td>
+                            <td onclick="run(this)" id="td5"></td>
+                            <td onclick="run(this)" id="td6"></td>
+                        </tr>
+                        <tr>
+                            <td onclick="run(this)" id="td7"></td>
+                            <td onclick="run(this)" id="td8"></td>
+                            <td onclick="run(this)" id="td9"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="container">
+                <h3 class="text-warning">By :- Omkar Pawar</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="tic_tac_toe.js"></script>
+</body>
+
+</html>

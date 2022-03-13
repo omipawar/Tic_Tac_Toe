@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#head{
+    height: 200px;
+    
+}
+#head,h1{
+    padding-top: 20px;
+}
+#head,button{
+    margin-bottom: 30px;
+}
+td{
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    font-size: 60px;
+    text-align: center;
+}
+table{
+    margin-top: 150px;
+}
